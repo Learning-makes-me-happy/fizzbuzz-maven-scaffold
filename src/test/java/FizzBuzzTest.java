@@ -22,7 +22,7 @@ public class FizzBuzzTest {
                  {"1",1},
                  {"Fizz",3},
                  {"Buzz",5},
-                 {"FizzBuzz",15}
+                 {"FizzBuzz",15},
          });
     }
 
