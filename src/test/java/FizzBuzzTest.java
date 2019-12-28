@@ -6,7 +6,7 @@ import static junit.framework.Assert.assertEquals;
 public class FizzBuzzTest {
     @Test
     public void test(){
-        int number = 1;
+        int number = 3;
         assertEquals("1", FizzBuzz.of(number));
     }
 }

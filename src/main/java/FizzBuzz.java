@@ -1,5 +1,8 @@
 public class FizzBuzz {
     public static String of(int number) {
-        return "1";
+        if(number == 1){
+            return String.valueOf(number);
+        }
+        return null;
     }
 }
