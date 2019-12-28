@@ -35,15 +35,15 @@ public class FizzBuzzTest {
         assertEquals(excepted, FizzBuzz.of(number));
     }
 
-    @Rule
-    public ExpectedException exceptedException = ExpectedException.none();
-
-    @Test
-    public void should_throw_IAE_give_number_le_0() {
-        exceptedException.expect(IllegalArgumentException.class);
-        exceptedException.expectMessage("Invalid input");
-        FizzBuzz.of(0);
-    }
+//    @Rule
+//    public ExpectedException exceptedException = ExpectedException.none();
+//
+//    @Test
+//    public void should_throw_IAE_give_number_le_0() {
+//        exceptedException.expect(IllegalArgumentException.class);
+//        exceptedException.expectMessage("Invalid input");
+//        FizzBuzz.of(0);
+//    }
 
 
 }
