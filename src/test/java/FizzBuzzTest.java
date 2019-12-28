@@ -7,6 +7,6 @@ public class FizzBuzzTest {
     @Test
     public void test(){
         int number = 3;
-        assertEquals("1", FizzBuzz.of(number));
+        assertEquals("Fizz", FizzBuzz.of(number));
     }
 }
