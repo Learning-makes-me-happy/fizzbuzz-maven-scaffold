@@ -1,17 +1,28 @@
 public class FizzBuzz {
-    public static String of(int number) {
-        if(number < 0 ){
-            throw new  IllegalArgumentException("Invalid input");
+    public static StringBuffer of(int number) {
+        if (number <= 0) {
+            throw new IllegalArgumentException("Invalid input");
         }
-        if(number%3 == 0 && number%5 == 0){
-            return "FizzBuzz";
+        StringBuffer s = new StringBuffer();
+//        if(number%3 == 0 && number%5 == 0){
+//            return "FizzBuzz";
+//        }
+        if (count(number, 3)) {
+            s.append("Fizz");
         }
-        if(number%3 == 0){
-            return "Fizz";
+        if (count(number, 5)) {
+            s.append("Buzz");
         }
-        if(number%5 == 0){
-            return "Buzz";
+        if (s.length() == 0) {
+            s.append(number);
         }
-        return String.valueOf(number);
+        return s;
     }
+
+    public static boolean count(int number, int i) {
+        if (number % i == 0) {
+            return true;
+        } else return false;
+    }
+
 }
